@@ -1,6 +1,6 @@
 
   /* On screens that are 993px wide or more (default CSS)*/
-body p {
+  body p {
     margin: 0px;
 }
 
@@ -150,6 +150,14 @@ body p {
     background: rgb(14, 201, 214);
     color: greenyellow;
     margin: 10px 0px;
+}
+
+.checked {
+    color: rgb(0, 0, 0);
+}
+
+.unchekd {
+    color: rgb(184, 184, 184);
 }
   
   /* On screens that are 992px wide or less */
