@@ -1,0 +1,220 @@
+
+  /* On screens that are 993px wide or more (default CSS)*/
+body p {
+    margin: 0px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.details {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.b-img-cont {
+    flex-direction: row-reverse !important;
+}
+
+.number-label {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.details img {
+    display: flex;
+    height: fit-content;
+}
+
+.details > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    color: rgb(27, 82, 233);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.details-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.details-img-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.details-img-wrapper img {
+    display: flex;
+    border: 1px solid #ccc;
+    margin: 20px 50px 10px 50px;
+}
+
+.details-img-wrapper img:hover {
+    border: 1px solid rgb(228, 124, 38);
+    box-shadow: 1px 2px 2px 1px rgb(204, 110, 33);
+    cursor: pointer;
+}
+
+.details-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 15px 20px;
+
+    font-weight: bold;
+}
+
+.details-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0px 10px 0px;
+
+    color: black;
+    font-size: 24px;
+}
+
+.details-row .label-txt {
+    text-align: left;
+}
+
+.details-row span {
+    text-align: left;
+    justify-content: left;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    
+    color: black;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.info > span {
+    padding: 8px 10px;
+}
+
+.info > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.action-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.para {
+    line-height: 26px;
+    margin: 5px 0px;
+    font-size: 24px;
+}
+
+.more-info {
+    color: rgb(3, 159, 170);
+    cursor: pointer;
+    font-size: 24px;
+    margin: 5px 0px;
+}
+
+.btn-reserve {
+    height: 40px;
+    width: 120px;
+
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background: rgb(34, 189, 209);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.btn-reserve:hover {
+    border: 1px solid #eee;
+    background: rgb(14, 201, 214);
+    color: greenyellow;
+    margin: 10px 0px;
+}
+  
+  /* On screens that are 992px wide or less */
+  @media screen and (max-width: 992px) {
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .b-img-cont {
+        flex-direction: row-reverse !important;
+    }
+
+    .details img {
+        height: fit-content;
+    }
+
+    .info {
+        margin: 0px 0px;
+        padding: 10px 25px;
+    }
+    
+    .info > div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .action-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 25px 0px 0px;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 660px) {
+    
+    .details-wrapper {
+        flex-direction: column;
+    }
+
+    .number-label {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .details-img-wrapper {
+        display: block;
+        padding: 0px 0px 0px 100px;
+    }
+
+    .details-wrapper img {
+        float: left;
+    }
+
+    .b-img-cont {
+        width: 50px;
+    }
+
+    .b-img {
+        position: absolute;
+        margin-top: 50px;
+        margin-left: 100px;
+    }
+  }
+  
